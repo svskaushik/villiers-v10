@@ -9,21 +9,29 @@ export const siteConfig = {
 			href: "/",
 		},
     {
-      label: "Docs",
+      label: "History/Future",
       href: "/docs",
     },
     {
-      label: "Pricing",
+      label: "News",
       href: "/pricing",
     },
     {
-      label: "Blog",
+      label: "Engine Range",
       href: "/blog",
     },
     {
-      label: "About",
+      label: "Radial Gearbox",
       href: "/about",
-    }
+    },
+	{
+		label: "Apparel",
+		href: "/",
+	},
+	{
+		label: "Contact Us",
+		href: "/",
+	}
 	],
 	navMenuItems: [
 		{

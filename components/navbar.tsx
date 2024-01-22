@@ -56,26 +56,30 @@ export const Navbar = () => {
 			<NavbarContent className="basis-1/5 sm:basis-full" justify="start">
 				<NavbarBrand as="li" className="gap-3 max-w-fit">
 					<NextLink className="flex justify-start items-center gap-1" href="/">
-						<Logo />
-						<p className="font-bold text-inherit">ACME</p>
+						<Logo src="villiers-logo.png" />
+						<p className="font-bold text-inherit">Since 1898</p>
+						<div className="invisible">Placeholder</div>
 					</NextLink>
 				</NavbarBrand>
+			</NavbarContent>
+
+			<NavbarContent className="basis-3/5 sm:basis-full" justify="center">
 				<ul className="hidden lg:flex gap-4 justify-start ml-2">
-					{siteConfig.navItems.map((item) => (
-						<NavbarItem key={item.href}>
-							<NextLink
-								className={clsx(
-									linkStyles({ color: "foreground" }),
-									"data-[active=true]:text-primary data-[active=true]:font-medium"
-								)}
-								color="foreground"
-								href={item.href}
-							>
-								{item.label}
-							</NextLink>
-						</NavbarItem>
-					))}
-				</ul>
+						{siteConfig.navItems.map((item) => (
+							<NavbarItem key={item.href}>
+								<NextLink
+									className={clsx(
+										linkStyles({ color: "foreground" }),
+										"data-[active=true]:text-primary data-[active=true]:font-medium"
+									)}
+									color="foreground"
+									href={item.href}
+								>
+									{item.label}
+								</NextLink>
+							</NavbarItem>
+						))}
+					</ul>
 			</NavbarContent>
 
 			<NavbarContent
@@ -83,7 +87,7 @@ export const Navbar = () => {
 				justify="end"
 			>
 				<NavbarItem className="hidden sm:flex gap-2">
-					<Link isExternal href={siteConfig.links.twitter} aria-label="Twitter">
+					{/* <Link isExternal href={siteConfig.links.twitter} aria-label="Twitter">
 						<TwitterIcon className="text-default-500" />
 					</Link>
 					<Link isExternal href={siteConfig.links.discord} aria-label="Discord">
@@ -91,10 +95,10 @@ export const Navbar = () => {
 					</Link>
 					<Link isExternal href={siteConfig.links.github} aria-label="Github">
 						<GithubIcon className="text-default-500" />
-					</Link>
+					</Link> */}
 					<ThemeSwitch />
 				</NavbarItem>
-				<NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem>
+				{/* <NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem>
 				<NavbarItem className="hidden md:flex">
 					<Button
             isExternal
@@ -106,7 +110,7 @@ export const Navbar = () => {
 					>
 						Sponsor
 					</Button>
-				</NavbarItem>
+				</NavbarItem> */}
 			</NavbarContent>
 
 			<NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
