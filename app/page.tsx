@@ -6,7 +6,10 @@ import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
 import Image from "next/image";
-import landingPic from "public/V10-1.jpg";
+import landingPicV10 from "public/V10-1.jpg";
+import landingPicV6 from "public/V6.jpg";
+import Apparel from "public/apparel.png";
+import History from "public/history.jpg";
 
 export default function Home() {
 	return (
@@ -52,55 +55,50 @@ export default function Home() {
 			
 
 			<div data-hs-carousel='{
-				"loadingClasses": "opacity-0",
-				"isAutoPlay": true
+				"loadingClasses": "opacity-0"
 			}' className="relative">
-			<div className="hs-carousel relative overflow-hidden w-full min-h-[550px] bg-white rounded-lg">
+			<div className="hs-carousel relative overflow-hidden w-full min-h-[550px] rounded-lg">
 				<div className="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
-				<div className="hs-carousel-slide">
-					<span className="bg-white dark:bg-gray-900 flex flex-row rounded-lg bg-opacity-10">
-						<div className="place-self-center mr-auto lg:col-span-7 py-8 px-4 mx-auto max-w-screen-xl lg:gap-8 xl:gap-0 lg:py-16">
-							<h1 className="mb-4 max-w-2xl text-4xl font-extrabold leading-none md:text-5xl xl:text-6xl dark:text-white">New 2 litre V10</h1>
-							<p className="mb-6 max-w-2xl text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400 font-bold">We are about to start dyno testing this engine at Villiers!</p>
-							<p className="mb-6 max-w-2xl font-light text-gray-500 lg:mb-8 md:text-md lg:text-lg dark:text-gray-400">The much anticipated compact V10 engine is due to power a range of exciting new vehicles from sister companies Connaught and Levis.
-							Villiers are developing this unique narrow angle engine in conjunction with an ex F1 engineer and is expected to rev up to 13,000 rpm</p>
-							<a href="#" className="inline-flex justify-center items-center py-3 px-5 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
-								More information
-								<svg className="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-							</a>
-						</div>
-						<div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
-						<Image
-							src={landingPic}
-							alt="V10 Image"
-						/>
-						</div>                
-					</span>
-				</div>
-				<div className="hs-carousel-slide">
-					<span className="bg-white dark:bg-gray-900 flex flex-row rounded-lg bg-opacity-10">
-						<div className="place-self-center mr-auto lg:col-span-7 py-8 px-4 mx-auto max-w-screen-xl lg:gap-8 xl:gap-0 lg:py-16">
-							<h1 className="mb-4 max-w-2xl text-4xl font-extrabold leading-none md:text-5xl xl:text-6xl dark:text-white">New 1.2 litre V6</h1>
-						
-							<p className="mb-6 max-w-2xl font-light text-gray-500 lg:mb-8 md:text-md lg:text-lg dark:text-gray-400">Derived from the 2 litre V10, Villiers new compact V6 engine is nearing prototype stage. Its been developed by the same team as the V10 and is due to power a range of Levis motorcycles.</p>
-							<a href="#" className="inline-flex justify-center items-center py-3 px-5 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
-								More information
-								<svg className="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-							</a>
-						</div>
-						<div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
-						<Image
-							src={landingPic}
-							alt="V10 Image"
-						/>
-						</div>                
-					</span>
-				</div>
-				<div className="hs-carousel-slide">
-					<div className="flex justify-center h-full bg-gray-300 p-6">
-					<span className="self-center text-4xl transition duration-700">Third slide</span>
+					<div className="hs-carousel-slide">
+						<span className="bg-white dark:bg-gray-900 flex flex-row rounded-lg bg-opacity-10">
+							<div className="place-self-center mr-auto lg:col-span-7 py-8 px-4 mx-auto max-w-screen-xl lg:gap-8 xl:gap-0 lg:py-16">
+								<h1 className="mb-4 max-w-2xl text-4xl font-extrabold leading-none md:text-5xl xl:text-6xl dark:text-white">New 2 litre V10</h1>
+								<p className="mb-6 max-w-2xl text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400 font-bold">We are about to start dyno testing this engine at Villiers!</p>
+								<p className="mb-6 max-w-2xl font-light text-gray-500 lg:mb-8 md:text-md lg:text-lg dark:text-gray-400">The much anticipated compact V10 engine is due to power a range of exciting new vehicles from sister companies Connaught and Levis.
+								Villiers are developing this unique narrow angle engine in conjunction with an ex F1 engineer and is expected to rev up to 13,000 rpm</p>
+								<a href="#" className="inline-flex justify-center items-center py-3 px-5 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+									More information
+									<svg className="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+								</a>
+							</div>
+							<div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
+							<Image
+								src={landingPicV10}
+								alt="V10 Image"
+							/>
+							</div>                
+						</span>
 					</div>
-				</div>
+					<div className="hs-carousel-slide">
+						<span className="bg-white dark:bg-gray-900 flex flex-row rounded-lg bg-opacity-10">
+							<div className="place-self-center mr-auto lg:col-span-7 py-8 px-4 mx-auto max-w-screen-xl lg:gap-8 xl:gap-0 lg:py-16">
+								<h1 className="mb-4 max-w-2xl text-4xl font-extrabold leading-none md:text-5xl xl:text-6xl dark:text-white">New 1.2 litre V6</h1>
+							
+								<p className="mb-6 max-w-2xl font-light text-gray-500 lg:mb-8 md:text-md lg:text-lg dark:text-gray-400">Derived from the 2 litre V10, Villiers new compact V6 engine is nearing prototype stage. Its been developed by the same team as the V10 and is due to power a range of Levis motorcycles.</p>
+								<a href="#" className="inline-flex justify-center items-center py-3 px-5 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+									More information
+									<svg className="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+								</a>
+							</div>
+							<div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
+							<Image
+								src={landingPicV6}
+								alt="V10 Image"
+							/>
+							</div>                
+						</span>
+					</div>
+					
 				</div>
 			</div>
 
@@ -124,9 +122,48 @@ export default function Home() {
 			<div className="hs-carousel-pagination flex justify-center absolute bottom-3 start-0 end-0 space-x-2">
 				<span className="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 w-3 h-3 border border-gray-400 rounded-full cursor-pointer"></span>
 				<span className="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 w-3 h-3 border border-gray-400 rounded-full cursor-pointer"></span>
-				<span className="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 w-3 h-3 border border-gray-400 rounded-full cursor-pointer"></span>
+				{/* <span className="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 w-3 h-3 border border-gray-400 rounded-full cursor-pointer"></span> */}
 			</div>
 			</div>
+
+			<section className="flex flex-row bg-slate-700 rounded-lg bg-opacity-10 ">
+				<div className="flex flex-col items-center justify-center flex-1 place-self-center lg:col-span-7 py-8 px-4 mx-auto lg:gap-8 xl:gap-0 lg:py-16">
+					<h1 className="mb-4 max-w-2xl text-4xl font-extrabold leading-none md:text-5xl xl:text-6xl dark:text-white">History</h1>
+					<p className="mb-6 max-w-2xl font-light text-gray-500 lg:mb-8 md:text-md lg:text-lg dark:text-gray-400">Learn about out history</p>
+					<a href="#" className="inline-flex justify-center items-center py-3 px-5 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+					Check out our history
+					<svg className="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+					</a>
+				</div>
+				<div className="flex-1 hidden m-8 lg:col-span-5 lg:flex  overflow-hidden items-center justify-center">
+					<Image
+					src={History}
+					alt="V10 Image"
+					height={300}
+					className="rounded-lg"
+					/>
+				</div>
+			</section>
+
+			<section className="flex flex-row bg-slate-700 rounded-lg bg-opacity-10 ">
+				<div className="flex flex-col items-center justify-center flex-1 place-self-center lg:col-span-7 py-8 px-4 mx-auto lg:gap-8 xl:gap-0 lg:py-16">
+					<h1 className="mb-4 max-w-2xl text-4xl font-extrabold leading-none md:text-5xl xl:text-6xl dark:text-white">Apparel</h1>
+					
+					<p className="mb-6 max-w-2xl font-light text-gray-500 lg:mb-8 md:text-md lg:text-lg dark:text-gray-400">Exclusive range of clothing and accessories</p>
+					<a href="#" className="inline-flex justify-center items-center py-3 px-5 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+						Check out our range
+						<svg className="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+					</a>
+				</div>
+				<div className="flex-1 hidden m-8 lg:col-span-5 lg:flex overflow-hidden items-center justify-center">
+					<Image
+					src={Apparel}
+					alt="V10 Image"
+					height={300}
+					className="rounded-lg"
+					/>
+				</div>
+			</section>
 
 		</section>
 	);
